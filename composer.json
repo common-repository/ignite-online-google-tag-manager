@@ -1,0 +1,36 @@
+{
+  "name": "igniteonline/ignite-gtm",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "description": "A WordPress plugin which provides support for Google Tag Manager",
+  "homepage": "https://igniteonline.com.au",
+  "authors": [
+    {
+      "name": "Nicolo Sacchi",
+      "email": "nicolo.s@igniteonline.com.au",
+      "homepage": "https://igniteonline.com.au"
+    },
+    {
+      "name": "Milton Pena",
+      "email": "milton.p@igniteonline.com.au",
+      "homepage": "https://igniteonline.com.au"
+    }
+  ],
+  "keywords": [
+    "wordpress"
+  ],
+  "autoload":{
+    "psr-4": {
+      "IgniteOnline\\Plugins\\": "modules/",
+      "IgniteOnline\\Utils\\": "Utils/"
+    }
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "composer/installers": "~1.0"
+  },
+  "require-dev": {
+    "10up/wp_mock": "dev-master",
+    "phpunit/phpunit": "^4.3"
+  }
+}
